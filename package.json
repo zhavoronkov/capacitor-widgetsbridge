@@ -6,11 +6,6 @@
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
   "unpkg": "dist/plugin.js",
-  "files": [
-    "dist/",
-    "ios/Plugin/",
-    "CapacitorWidgetsbridgePlugin.podspec"
-  ],
   "author": "Mustafa (0xn33t)",
   "license": "MIT",
   "repository": {
