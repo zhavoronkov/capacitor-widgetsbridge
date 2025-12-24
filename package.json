@@ -15,10 +15,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhavoronkov/capacitor-widgetsbridge-plugin.git"
+    "url": "git+https://github.com/zhavoronkov/capacitor-widgetsbridge.git"
   },
   "bugs": {
-    "url": "https://github.com/zhavoronkov/capacitor-widgetsbridge-plugin.git/issues"
+    "url": "https://github.com/zhavoronkov/capacitor-widgetsbridge.git/issues"
   },
   "keywords": [
     "capacitor",
