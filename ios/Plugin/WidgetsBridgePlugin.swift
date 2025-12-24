@@ -4,7 +4,17 @@ import WidgetKit
 
 
 @objc(WidgetsBridgePlugin)
-public class WidgetsBridgePlugin: CAPPlugin {
+public class WidgetsBridgePlugin: CAPPlugin, CAPBridgedPlugin {
+    public let identifier = "WidgetsBridgePlugin"
+    public let jsName = "WidgetsBridgePlugin"
+    public let pluginMethods: [CAPPluginMethod] = [
+        CAPPluginMethod(name: "setItem", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "getItem", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "removeItem", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "reloadAllTimelines", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "reloadTimelines", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "getCurrentConfigurations", returnType: CAPPluginReturnPromise)
+    ]
 
     @objc func setItem(_ call: CAPPluginCall) {
         guard let key = call.getString("key") else {
