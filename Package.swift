@@ -12,7 +12,7 @@ let package = Package(
             targets: ["WidgetsBridgePlugin"])
     ],
     dependencies: [
-        .package(url: "https://github.com/ionic-team/capacitor-swift-pm.git", branch: "8.0.0")
+        .package(url: "https://github.com/ionic-team/capacitor-swift-pm.git", from: "8.0.0")
     ],
     targets: [
         .target(
